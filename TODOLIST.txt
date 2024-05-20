@@ -1,0 +1,9 @@
+- layout
+- animations
+- links
+
+------------
+
+- substituir dados fake
+- SEO
+- subir site na hospedagem
