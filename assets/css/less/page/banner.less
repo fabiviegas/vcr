@@ -1,1 +1,117 @@
 //out: false
+
+.page__banner {
+    padding-top: 197px;
+    padding-bottom: 200px;
+    background-image: url('../img/banner-mobile.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+
+    .wrapper {
+        max-width: 1064px;
+        padding-left: 24px;
+        padding-right: 24px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .title {
+            font: 700 32px @fontM;
+            color: #FFF;
+            line-height: 146%;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+
+            span {
+                background-color: #020305;
+            }
+        }
+
+        .description {
+            font: 500 18px @fontU;
+            color: #FFF;
+            line-height: 134%;
+            width: 278px;
+
+            span {
+                font-weight: 700;
+            }
+        }
+    }
+
+    .cta__banner {
+        position: absolute;
+        width: 324px;
+        background-image: url('../img/bg-cta-1-mobile.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 30px 22px;
+        bottom: -88px;
+        left: calc(50% - 162px);
+        z-index: 2;
+        box-shadow: 4px 7px 10px rgba(0, 0, 0, 0.6);
+
+        .cta__title {
+            text-align: center;
+            color: #020305;
+            margin-bottom: 30px;
+            font: 700 22px @fontU;
+            line-height: 135%;
+        }
+
+        .arrow__right {
+            display: none;
+        }
+
+    }
+
+    @media screen and (min-width: 768px) {
+        background-image: url('../img/banner.png');
+        padding-top: 291px;
+        padding-bottom: 250px;
+
+        .wrapper {
+
+            .title {
+                font-size: 46px;
+                line-height: 134%;
+                margin-bottom: 20px;
+                width: 640px;
+            }
+
+            .description {
+                font-size: 20px;
+                width: 600px;
+            }
+        }
+
+        .cta__banner {
+            position: absolute;
+            background-image: url('../img/bg-cta-1.png');
+            padding: 44px 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+            width: 1016px;
+            left: calc(50% - 508px);
+            bottom: -34px;
+
+            .cta__title {
+                width: 386px;
+                text-align: left;
+                margin-bottom: 0;
+            }
+
+            .arrow__right {
+                display: block;
+                width: fit-content;
+            }
+
+            .btn__banner {
+                width: 344px;
+            }
+        }
+    }
+}

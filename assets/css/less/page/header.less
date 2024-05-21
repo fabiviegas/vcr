@@ -1,1 +1,149 @@
 //out: false
+
+.page__header {
+    position: absolute;
+    z-index: 3000;
+    padding-top: 23px;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    .wrapper {
+        max-width: 1200px;
+        padding-left: 12px;
+        padding-right: 12px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .logo {        
+            margin-left: 15px;
+
+            a {
+                width: 175px;
+
+                img {
+                    width: 100%;
+                }
+            }       
+        }
+
+        .is--desktop {
+            display: none;
+        }
+
+        .is--mobile {
+            flex-grow: 0;
+            
+            .navbar__hamburguer {
+                margin-right: 15px;
+                display: flex;
+                justify-content: flex-end;
+                width: fit-content;            
+            }
+
+            .navbar__overlay {
+                background-color: #020305; 
+                z-index: 3001;
+                display: none;
+                .animation__fade_in_right();
+            
+                &.open {
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%;
+                    width: 100%;
+                    position: fixed;                                
+                    top: 0;
+                    right: 0;                
+                    overflow: hidden !important;
+                    transition: all linear 0.5s;
+            
+                    .overlay__content {                    
+                        overflow-y: auto !important;
+                        height: 90%;
+
+                        .overlay__header {
+                            margin: 30px 30px 109px 30px; 
+
+                            .overlay__logo {
+                                width: 130px;
+                            }
+                        }
+
+                        .overlay__menu {
+                            margin: 0;
+                            
+                            .overlay__links {
+                                a {
+                                    font: 700 16px @fontU;
+                                    color: white;
+                                    text-decoration: none;
+                                    margin-bottom: 16px;
+                                    text-transform: uppercase;
+                                }
+                            }
+
+                            .overlay__social {
+                                display: flex;
+                                gap: 20px;
+                                align-items: center;
+                                margin-top: 80px;
+
+                                a {
+                                    transition: all linear .15s;
+
+                                    img {
+                                        filter: brightness(0) saturate(100%) invert(52%) sepia(38%) saturate(379%) hue-rotate(346deg) brightness(95%) contrast(90%);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                } 
+            }
+        }  
+    }  
+
+    @media screen and (min-width: 768px) {
+        padding-top: 35px;
+
+        .wrapper {
+
+            .logo {
+                margin-left: 0;
+
+                a {
+                    width: 226px;
+                }
+            }
+
+            .is--desktop {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                width: 600px;
+
+                .links {
+                    display: flex;
+                    gap: 60px;
+
+                    a {
+                        color: #FFF;
+                        font: 700 16px @fontU; 
+                        transition: all linear .15s;
+                        text-transform: uppercase;              
+
+                        &:hover {
+                            color: #A98261;
+                            cursor: pointer;                                                
+                        }
+                    }
+                }
+            }
+
+            .is--mobile {
+                display: none;
+            }
+        }
+    }
+}
