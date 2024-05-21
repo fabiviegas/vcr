@@ -1,5 +1,5 @@
-- layout
-- animations
+- layout - ok
+- botão do whats
 - links
 
 ------------
