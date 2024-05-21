@@ -30,6 +30,7 @@
         .services__content {
             display: flex;
             align-items: center;
+            justify-content: center;
             flex-direction: column;
             gap: 25px;
 
@@ -84,6 +85,22 @@
         .wrapper {
             .title {
                 font-size: 42px;
+            }
+
+            .services__content {
+                flex-direction: row;
+                gap: 70px;
+
+                .card__service {
+                    height: 345px;
+                    width: 370px;
+
+                    .card__content {
+                        .card__title {
+                            font-size: 28px;
+                        }
+                    }
+                }
             }
         }
     }

@@ -1,0 +1,72 @@
+// out: false
+
+// * CAROUSEL UTILS
+// ? Objetivo: mixins para customizar o carrossel do Owl Carousel e manter consistência no projeto.
+
+.owl-dots-square() {
+    .owl-dots {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+
+        .owl-dot {
+            height: 8px !important;
+            display: flex;
+            align-items: center;
+
+            span {
+                margin: 0;
+                width: 8px;
+                height: 8px;
+                background-color: #918D8C;
+                border-radius: 0;
+            }
+
+            &.active {
+                span {
+                    background-color: #7A5B41;
+                }
+            }
+        }
+
+        &.disabled {
+            display: none;
+        }
+    }
+}
+
+.owl-dots-square-white() {
+    .owl-dots {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+
+        .owl-dot {
+            height: 8px !important;
+            display: flex;
+            align-items: center;
+
+            span {
+                margin: 0;
+                width: 8px;
+                height: 8px;
+                background-color: rgba(255, 255, 255, 0.26);
+                border-radius: 0;
+            }
+
+            &.active {
+                span {
+                    background-color: #FFF;
+                }
+            }
+        }
+
+        &.disabled {
+            display: none;
+        }
+    }
+}

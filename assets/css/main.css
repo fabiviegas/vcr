@@ -573,7 +573,7 @@ nav {
     margin-left: 0;
   }
   .page__header .wrapper .logo a {
-    width: 226px;
+    width: 190px;
   }
   .page__header .wrapper .is--desktop {
     display: flex;
@@ -587,7 +587,7 @@ nav {
   }
   .page__header .wrapper .is--desktop .links a {
     color: #FFF;
-    font: 700 16px 'Urbanist', sans-serif;
+    font: 700 14px 'Urbanist', sans-serif;
     transition: all linear 0.15s;
     text-transform: uppercase;
   }
@@ -726,6 +726,7 @@ nav {
 .page__services .wrapper .services__content {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   gap: 25px;
 }
@@ -772,5 +773,360 @@ nav {
   }
   .page__services .wrapper .title {
     font-size: 42px;
+  }
+  .page__services .wrapper .services__content {
+    flex-direction: row;
+    gap: 70px;
+  }
+  .page__services .wrapper .services__content .card__service {
+    height: 345px;
+    width: 370px;
+  }
+  .page__services .wrapper .services__content .card__service .card__content .card__title {
+    font-size: 28px;
+  }
+}
+.page__benefits {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-image: url('../img/bg-benefits-mobile.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.page__benefits .wrapper {
+  max-width: 1262px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.page__benefits .wrapper .heading {
+  margin-bottom: 35px;
+}
+.page__benefits .wrapper .heading .title {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font: 700 38px 'Montserrat', sans-serif;
+  color: #FFF;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+.page__benefits .wrapper .heading .title .title__line {
+  width: fit-content;
+}
+.page__benefits .wrapper .heading .subtitle {
+  font: 400 18px 'Urbanist', sans-serif;
+  color: #FFF;
+}
+.page__benefits .wrapper .cover {
+  width: 100%;
+  margin-bottom: 35px;
+}
+.page__benefits .wrapper .benefits__list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 35px;
+}
+.page__benefits .wrapper .benefits__list .benefit {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font: 500 18px 'Urbanist', sans-serif;
+  color: #FFF;
+}
+.page__benefits .wrapper .benefits__list .benefit .icon__benefits {
+  width: 20px;
+}
+.page__benefits .wrapper .benefits__cta {
+  text-align: center;
+  background-color: #E2E2E2;
+  border-radius: 10px;
+  padding: 35px 20px 25px 20px;
+}
+.page__benefits .wrapper .benefits__cta .cta__title {
+  color: #020305;
+  text-transform: uppercase;
+  font: 400 26px 'Montserrat', sans-serif;
+  margin-bottom: 20px;
+}
+.page__benefits .wrapper .benefits__cta .cta__title span {
+  font-weight: 700;
+}
+.page__benefits .wrapper .benefits__cta .content .description {
+  padding-left: 12px;
+  padding-right: 12px;
+  font: 400 22px 'Urbanist', sans-serif;
+  color: #020305;
+  margin-bottom: 28px;
+}
+.page__benefits .wrapper .benefits__cta .content .description span {
+  font-weight: 700;
+}
+@media screen and (min-width: 768px) {
+  .page__benefits {
+    padding-top: 100px;
+    background-image: url('../img/bg-benefits.png');
+  }
+  .page__benefits .wrapper {
+    display: grid;
+    grid-template-areas: "heading benefits" "cover benefits" "cta cta";
+    gap: 50px;
+  }
+  .page__benefits .wrapper .heading {
+    grid-area: heading;
+  }
+  .page__benefits .wrapper .heading .subtitle {
+    font-size: 22px;
+  }
+  .page__benefits .wrapper .cover {
+    grid-area: cover;
+    max-width: 567px;
+  }
+  .page__benefits .wrapper .benefits__list {
+    grid-area: benefits;
+    justify-content: flex-end;
+  }
+  .page__benefits .wrapper .benefits__list .benefit {
+    font-size: 22px;
+  }
+  .page__benefits .wrapper .benefits__list .benefit .icon__benefits {
+    width: 40px;
+  }
+  .page__benefits .wrapper .benefits__cta {
+    grid-area: cta;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 50px;
+    justify-content: space-between;
+    padding: 30px 90px;
+  }
+  .page__benefits .wrapper .benefits__cta .cta__title {
+    font-size: 32px;
+    width: 311px;
+    margin-bottom: 0;
+  }
+  .page__benefits .wrapper .benefits__cta .content {
+    max-width: 617px;
+  }
+  .page__benefits .wrapper .benefits__cta .content .description {
+    margin-bottom: 20px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.page__testimonials {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-image: url('../img/bg-testimonials.png');
+  background-repeat: no-repeat;
+}
+.page__testimonials .wrapper {
+  max-width: 1262px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.page__testimonials .wrapper .heading {
+  margin-bottom: 35px;
+}
+.page__testimonials .wrapper .heading .title {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font: 700 38px 'Montserrat', sans-serif;
+  color: #020305;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+.page__testimonials .wrapper .heading .title .title__line {
+  width: fit-content;
+}
+.page__testimonials .wrapper .heading .subtitle {
+  font: 400 18px 'Urbanist', sans-serif;
+  color: #020305;
+}
+.page__testimonials .wrapper .owl-carousel.owl-theme.testimonials__carousel .owl-dots {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.page__testimonials .wrapper .owl-carousel.owl-theme.testimonials__carousel .owl-dots .owl-dot {
+  height: 8px !important;
+  display: flex;
+  align-items: center;
+}
+.page__testimonials .wrapper .owl-carousel.owl-theme.testimonials__carousel .owl-dots .owl-dot span {
+  margin: 0;
+  width: 8px;
+  height: 8px;
+  background-color: #918D8C;
+  border-radius: 0;
+}
+.page__testimonials .wrapper .owl-carousel.owl-theme.testimonials__carousel .owl-dots .owl-dot.active span {
+  background-color: #7A5B41;
+}
+.page__testimonials .wrapper .owl-carousel.owl-theme.testimonials__carousel .owl-dots.disabled {
+  display: none;
+}
+.page__testimonials .wrapper .owl-carousel.owl-theme.testimonials__carousel .card__testimonial {
+  position: relative;
+  padding: 50px 30px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  background-color: #FFF;
+  border: 1px solid #C7C8CA;
+  border-radius: 5px;
+  min-height: 280px;
+  box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.3);
+}
+.page__testimonials .wrapper .owl-carousel.owl-theme.testimonials__carousel .card__testimonial .icon__quotes {
+  width: 50px;
+  position: absolute;
+  top: -25px;
+  left: 30px;
+}
+.page__testimonials .wrapper .owl-carousel.owl-theme.testimonials__carousel .card__testimonial .testimonial {
+  font: 400 14px 'Urbanist', sans-serif;
+  color: #020305;
+  line-height: 134%;
+}
+.page__testimonials .wrapper .owl-carousel.owl-theme.testimonials__carousel .card__testimonial .name {
+  font: 700 18px 'Urbanist', sans-serif;
+  color: #7A5B41;
+}
+@media screen and (min-width: 768px) {
+  .page__testimonials {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  .page__testimonials .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+  }
+  .page__testimonials .wrapper .heading {
+    width: 330px;
+  }
+  .page__testimonials .wrapper .heading .subtitle {
+    font-size: 22px;
+  }
+  .page__testimonials .wrapper .owl-carousel.owl-theme.testimonials__carousel {
+    width: 100%;
+  }
+  .page__testimonials .wrapper .owl-carousel.owl-theme.testimonials__carousel .card__testimonial {
+    width: 400px;
+    height: 330px;
+    padding: 60px 36px 36px 36px;
+    margin-top: 40px;
+  }
+  .page__testimonials .wrapper .owl-carousel.owl-theme.testimonials__carousel .card__testimonial .icon__quotes {
+    width: 80px;
+    top: -40px;
+    left: 36px;
+  }
+  .page__testimonials .wrapper .owl-carousel.owl-theme.testimonials__carousel .card__testimonial .testimonial {
+    font-size: 16px;
+    line-height: 147%;
+  }
+  .page__testimonials .wrapper .owl-carousel.owl-theme.testimonials__carousel .card__testimonial .name {
+    font-size: 20px;
+  }
+}
+.page__about {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #FDF9F9;
+}
+.page__about .wrapper {
+  max-width: 1262px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.page__about .wrapper .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  text-align: center;
+  line-height: 134%;
+  font: 700 32px 'Montserrat', sans-serif;
+  color: #020305;
+  margin-bottom: 35px;
+  text-transform: uppercase;
+}
+.page__about .wrapper .about__content .cover {
+  width: 100%;
+  max-width: 439px;
+  margin-bottom: 35px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.page__about .wrapper .about__content .content .about__text {
+  font: 400 16px 'Urbanist', sans-serif;
+  color: #020305;
+  line-height: 146%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.page__about .wrapper .about__content .content .about__numbers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.page__about .wrapper .about__content .content .about__numbers .number__info {
+  text-align: center;
+}
+.page__about .wrapper .about__content .content .about__numbers .number__info .number {
+  font: 700 96px 'Montserrat', sans-serif;
+  color: #A98261;
+}
+.page__about .wrapper .about__content .content .about__numbers .number__info .info {
+  font: 400 18px 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 29%;
+  color: #A98261;
+}
+@media screen and (min-width: 768px) {
+  .page__about {
+    padding-top: 90px;
+    padding-bottom: 95px;
+  }
+  .page__about .wrapper .title {
+    font-size: 42px;
+  }
+  .page__about .wrapper .about__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+  }
+  .page__about .wrapper .about__content .cover {
+    margin-right: 0;
+  }
+  .page__about .wrapper .about__content .content {
+    max-width: 574px;
+  }
+  .page__about .wrapper .about__content .content .about__text {
+    font-size: 18px;
+    line-height: 160%;
+    text-align: left;
+  }
+  .page__about .wrapper .about__content .content .about__numbers {
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
   }
 }

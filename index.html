@@ -235,7 +235,7 @@
             <div class="owl-carousel owl-theme testimonials__carousel">
 
                 <div class="item">
-                    <div class="card__testimonial">
+                    <div class="card__testimonial mx-auto">
                         <img src="assets/img/icon-quotes.svg" class="icon__quotes" alt="Aspas">
                         <p class="testimonial">Estou extremamente satisfeita com os serviços da construtora! Eles entregaram além das minhas expectativas, com qualidade, pontualidade e profissionalismo. Minha casa ficou exatamente como eu sonhava. Recomendo a todos que procuram por uma equipe confiável e competente.</p>
                         <p class="name">Maria da Silva, Empresária</p>
@@ -243,7 +243,7 @@
                 </div>
 
                 <div class="item">
-                    <div class="card__testimonial">
+                    <div class="card__testimonial mx-auto">
                         <img src="assets/img/icon-quotes.svg" class="icon__quotes" alt="Aspas">
                         <p class="testimonial">Estou extremamente satisfeita com os serviços da construtora! Eles entregaram além das minhas expectativas, com qualidade, pontualidade e profissionalismo. Minha casa ficou exatamente como eu sonhava. Recomendo a todos que procuram por uma equipe confiável e competente.</p>
                         <p class="name">Maria da Silva, Empresária</p>
@@ -256,8 +256,8 @@
     <section class="page__about" id="sobre">
         <div class="wrapper">
             <h2 class="title">
-                <img src="assets/img/title-line-brown.svg" class="title__line" alt="Título">
-                Depoimentos
+                <img src="assets/img/title-line.svg" class="title__line" alt="Título">
+                Quem somos
             </h2>
 
             <div class="about__content">
@@ -400,4 +400,31 @@
             </p>
         </div>
     </footer>
+
+    <!-- bootstrap 4.6.1 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+    <!-- owl carousel controls -->
+    <script src="assets/libs/owl.carousel.min.js"></script>
+    <script> 
+
+        $('.testimonials__carousel').owlCarousel({
+            loop: false,
+            nav: false,
+            dots: true,           
+                        
+            responsive:{
+                0: {
+                    items: 1,
+                    margin: 10,                    
+                },
+
+                768: {
+                    items: 2,
+                    margin: 25,
+                }
+            }
+        });
+    </script>
 </body>

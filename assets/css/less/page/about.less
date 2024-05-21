@@ -1,1 +1,111 @@
 //out: false
+
+.page__about {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #FDF9F9;
+
+    .wrapper {
+        max-width: 1262px;
+        padding-left: 24px;
+        padding-right: 24px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .title {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+            text-align: center;
+            line-height: 134%;
+            font: 700 32px @fontM;
+            color: #020305;
+            margin-bottom: 35px;
+            text-transform: uppercase;
+        }
+
+        .about__content {
+
+            .cover {
+                width: 100%;
+                max-width: 439px;
+                margin-bottom: 35px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .content {
+                .about__text {
+                    font: 400 16px @fontU;
+                    color: #020305;
+                    line-height: 146%;
+                    margin-bottom: 20px;
+                    text-align: center;
+                }
+
+                .about__numbers {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 16px;
+
+                    .number__info {
+                        text-align: center;
+
+                        .number {
+                            font: 700 96px @fontM;
+                            color: #A98261;
+                        }
+
+                        .info {
+                           font: 400 18px @fontM;
+                           text-transform: uppercase;
+                           letter-spacing: 29%;
+                           color: #A98261;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-top: 90px;
+        padding-bottom: 95px;
+
+        .wrapper {
+
+            .title {
+                font-size: 42px;
+            }
+
+            .about__content {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 70px;
+
+                .cover {
+                    margin-right: 0;
+                }
+
+                .content {
+                    max-width: 574px;
+
+                    .about__text {
+                        font-size: 18px;
+                        line-height: 160%;
+                        text-align: left;
+                    }
+
+                    .about__numbers {
+                        flex-direction: row;
+                        justify-content: center;
+                        gap: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

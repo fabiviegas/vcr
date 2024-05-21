@@ -1,1 +1,162 @@
 //out: false
+
+.page__benefits {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-image: url('../img/bg-benefits-mobile.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .wrapper {
+        max-width: 1262px;
+        padding-left: 24px;
+        padding-right: 24px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .heading {
+            margin-bottom: 35px;
+            
+            .title {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                font: 700 38px @fontM;
+                color: #FFF;
+                margin-bottom: 12px;
+                text-transform: uppercase;
+
+                .title__line {
+                    width: fit-content;
+                }
+            }
+
+            .subtitle {
+                font: 400 18px @fontU;
+                color: #FFF;
+            }
+        }
+
+        .cover {
+            width: 100%;
+            margin-bottom: 35px;
+        }
+
+        .benefits__list {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            margin-bottom: 35px;
+
+            .benefit {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                font: 500 18px @fontU;
+                color: #FFF;
+
+                .icon__benefits {
+                    width: 20px;
+                }
+            }
+        }
+
+        .benefits__cta {
+            text-align: center;
+            background-color: #E2E2E2;
+            border-radius: 10px;
+            padding: 35px 20px 25px 20px;
+
+            .cta__title {
+                color: #020305;
+                text-transform: uppercase;
+                font: 400 26px @fontM;
+                margin-bottom: 20px;
+
+                span {
+                    font-weight: 700;
+                }
+            }
+
+            .content {
+                .description {
+                    padding-left: 12px;
+                    padding-right: 12px;
+                    font: 400 22px @fontU;
+                    color: #020305;
+                    margin-bottom: 28px;
+
+                    span {
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-top: 100px;
+        background-image: url('../img/bg-benefits.png');
+
+        .wrapper {
+            display: grid;
+            grid-template-areas: 
+                "heading benefits"
+                "cover benefits"
+                "cta cta";
+            gap: 50px;
+
+            .heading {
+                grid-area: heading;
+
+                .subtitle {
+                    font-size: 22px;
+                }
+            }
+
+            .cover {
+                grid-area: cover;
+                max-width: 567px;
+            }
+
+            .benefits__list {
+                grid-area: benefits;
+                justify-content: flex-end;
+
+                .benefit {
+                    font-size: 22px;
+
+                    .icon__benefits {
+                        width: 40px;
+                    }
+                }
+            }
+
+            .benefits__cta {
+                grid-area: cta;
+                display: flex;
+                align-items: center;
+                text-align: left;
+                gap: 50px;
+                justify-content: space-between;
+                padding: 30px 90px;
+
+                .cta__title {
+                    font-size: 32px;
+                    width: 311px;
+                    margin-bottom: 0;
+                }
+
+                .content {
+                    max-width: 617px;
+
+                    .description {
+                        margin-bottom: 20px;
+                        padding-left: 0;
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
