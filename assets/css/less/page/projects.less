@@ -1,1 +1,105 @@
 //out: false
+
+.page__projects {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #EAEBED;
+
+    .wrapper {
+        max-width: 1262px;
+        padding-left: 24px;
+        padding-right: 24px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .heading {
+            margin-bottom: 45px;
+            
+            .title {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                font: 700 38px @fontM;
+                color: #020305;
+                margin-bottom: 10px;
+                text-transform: uppercase;
+
+                .title__line {
+                    width: fit-content;
+                }
+            }
+
+            .subtitle {
+                font: 400 18px @fontU;
+                color: #020305;
+            }
+        }
+
+        .owl-carousel.owl-theme.projects__carousel {
+
+            .owl-dots-square();
+
+            .card__project {
+                width: 300px;
+                height: 300px;
+                border-radius: 10px;
+                position: relative;
+
+                .cover__project {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    z-index: 0;
+                    border-radius: 10px;
+                    object-fit: cover;
+                }
+
+                .card__overlay {
+                    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 65.57%, rgba(0, 0, 0, 0.80) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0.00) 65.57%, rgba(0, 0, 0, 0.80) 100%);
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 1;
+                    border-radius: 10px;
+                }
+
+                .card__logo {
+                    width: 170px;
+                    position: absolute;
+                    left: calc(50% - 85px);
+                    bottom: 24px;
+                    z-index: 2;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-top: 96px;
+        padding-bottom: 100px;
+
+        .wrapper {
+
+            .heading {
+                margin-bottom: 80px;
+
+                .subtitle {
+                    font-size: 22px;
+                }
+            }
+
+            .owl-carousel.owl-theme.projects__carousel {
+                .owl-dots {
+                    display: none;
+                }
+
+                .card__project {
+                    width: 350px;
+                    height: 350px;
+                }
+            }
+        }
+    }
+}

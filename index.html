@@ -306,7 +306,7 @@
             <div class="owl-carousel owl-theme projects__carousel">
 
                 <div class="item">
-                    <div class="card__project">
+                    <div class="card__project mx-auto">
                         <img src="assets/img/project-1.png" class="cover__project" alt="Foto do Projeto">
                         <div class="card__overlay"></div>
                         <img src="assets/img/logo-vcr.png" class="card__logo" alt="Logo VCR Construtora">
@@ -314,7 +314,7 @@
                 </div>
 
                 <div class="item">
-                    <div class="card__project">
+                    <div class="card__project mx-auto">
                         <img src="assets/img/project-2.png" class="cover__project" alt="Foto do Projeto">
                         <div class="card__overlay"></div>
                         <img src="assets/img/logo-vcr.png" class="card__logo" alt="Logo VCR Construtora">
@@ -322,7 +322,7 @@
                 </div>
 
                 <div class="item">
-                    <div class="card__project">
+                    <div class="card__project mx-auto">
                         <img src="assets/img/project-3.png" class="cover__project" alt="Foto do Projeto">
                         <div class="card__overlay"></div>
                         <img src="assets/img/logo-vcr.png" class="card__logo" alt="Logo VCR Construtora">
@@ -420,8 +420,26 @@
                     margin: 10,                    
                 },
 
-                768: {
+                1200: {
                     items: 2,
+                    margin: 25,
+                }
+            }
+        });
+
+        $('.projects__carousel').owlCarousel({
+            loop: true,
+            nav: false,
+            dots: true,           
+                        
+            responsive:{
+                0: {
+                    items: 1,
+                    margin: 10,                    
+                },
+
+                1200: {
+                    items: 3,
                     margin: 25,
                 }
             }

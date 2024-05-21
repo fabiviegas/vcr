@@ -1,1 +1,53 @@
 //out: false
+
+.page__cta {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: url('../img/bg-cta-2.png'), linear-gradient(177deg, #414142 8.39%, #020305 92.62%);
+    background-repeat: no-repeat;
+    background-size: 300px, 100%;
+    background-position: bottom 0 right 0;
+
+    .wrapper {
+        max-width: 1262px;
+        padding-left: 24px;
+        padding-right: 24px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .title {
+            text-align: center;
+            font: 800 32px @fontU;
+            color: #FFF;
+            line-height: 134%;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        background-image: url('../img/bg-cta-2.png'), linear-gradient(92deg, #414142 5.06%, #1D1D1E 43.04%, #020305 99.86%);
+        background-size: 772px, 100%;
+        background-position: bottom -10px right 0;
+        padding-top: 70px;
+        padding-bottom: 70px;
+
+        .wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 50px;
+
+            .title {
+                font-size: 38px;
+                margin-bottom: 0;
+                width: 572px;
+                text-align: left;
+            }
+
+            .bta__cta {
+                max-width: 411px;
+            }
+        }
+    }
+}

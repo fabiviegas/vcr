@@ -34,3 +34,32 @@
     }
 }
 
+.btn__white {
+    background-color: #EEEDED;
+    font: 800 22px @fontU;
+    color: #020305;
+    padding: 18px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all linear .15s;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    .icon__whats {
+        width: fit-content;
+    }
+
+    &:hover {
+        background-color: #020305;
+        color: #FFF;
+        cursor: pointer;
+    }
+    
+    @media screen and (min-width: 768px) {
+        padding: 18px 76px;
+    }
+}
+
