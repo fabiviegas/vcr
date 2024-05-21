@@ -589,7 +589,7 @@ nav {
 .page__header .wrapper .is--mobile .navbar__overlay.open .overlay__content .overlay__menu .overlay__social a {
   transition: all linear 0.15s;
 }
-.page__header .wrapper .is--mobile .navbar__overlay.open .overlay__content .overlay__menu .overlay__social a img {
+.page__header .wrapper .is--mobile .navbar__overlay.open .overlay__content .overlay__menu .overlay__social a:hover img {
   filter: brightness(0) saturate(100%) invert(52%) sepia(38%) saturate(379%) hue-rotate(346deg) brightness(95%) contrast(90%);
 }
 @media screen and (min-width: 768px) {
@@ -1309,5 +1309,140 @@ nav {
   .page__projects .wrapper .owl-carousel.owl-theme.projects__carousel .card__project {
     width: 350px;
     height: 350px;
+  }
+}
+.page__footer .footer__content {
+  background-image: url('../img/bg-footer-mobile.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+.page__footer .footer__content .wrapper {
+  max-width: 988px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.page__footer .footer__content .wrapper .footer__links {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+.page__footer .footer__content .wrapper .footer__links .link__logo {
+  width: 200px;
+}
+.page__footer .footer__content .wrapper .footer__links .link__logo .logo__footer {
+  width: 100%;
+}
+.page__footer .footer__content .wrapper .footer__links .links__social {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.page__footer .footer__content .wrapper .footer__links .links__social .link {
+  transition: all linear 0.15s;
+}
+.page__footer .footer__content .wrapper .footer__links .links__social .link:hover img {
+  filter: brightness(0) saturate(100%) invert(52%) sepia(38%) saturate(379%) hue-rotate(346deg) brightness(95%) contrast(90%);
+}
+.page__footer .footer__content .wrapper .footer__nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+.page__footer .footer__content .wrapper .footer__nav .link__nav {
+  font: 700 14px 'Urbanist', sans-serif;
+  color: #FFF;
+  text-transform: uppercase;
+  transition: all linear 0.15s;
+}
+.page__footer .footer__content .wrapper .footer__nav .link__nav:hover {
+  color: #A98261;
+  cursor: pointer;
+}
+.page__footer .footer__content .wrapper .footer__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.page__footer .footer__content .wrapper .footer__contacts .link__contact {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.page__footer .footer__content .wrapper .footer__contacts .link__contact .icon__contact {
+  width: fit-content;
+}
+.page__footer .footer__content .wrapper .footer__contacts .link__contact .contact {
+  font: 400 16px 'Urbanist', sans-serif;
+  color: #FFF;
+  transition: all linear 0.15s;
+}
+.page__footer .footer__content .wrapper .footer__contacts .link__contact .contact:hover {
+  color: #A98261;
+  cursor: pointer;
+}
+.page__footer .footer__content .wrapper .footer__contacts .contact__info {
+  font: 400 16px 'Urbanist', sans-serif;
+  color: #FFF;
+  line-height: 149%;
+}
+.page__footer .footer__copyrights {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  background-color: #EEEDED;
+}
+.page__footer .footer__copyrights .copyrights {
+  font: 400 16px 'Urbanist', sans-serif;
+  line-height: 145%;
+  color: #020305;
+  text-align: center;
+  padding: 0 30px;
+}
+@media screen and (min-width: 768px) {
+  .page__footer .footer__content {
+    background-image: url('../img/bg-footer.png');
+    padding-top: 146px;
+    padding-bottom: 197px;
+  }
+  .page__footer .footer__content .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .page__footer .footer__content .wrapper .footer__links {
+    order: 2;
+  }
+  .page__footer .footer__content .wrapper .footer__links .link__logo {
+    width: 280px;
+  }
+  .page__footer .footer__content .wrapper .footer__nav {
+    order: 1;
+    align-items: flex-start;
+    text-align: left;
+    gap: 25px;
+    margin-bottom: 0;
+    width: 118px;
+    margin-left: 80px;
+  }
+  .page__footer .footer__content .wrapper .footer__contacts {
+    align-items: flex-start;
+    gap: 10px;
+    width: 279px;
+    order: 3;
+  }
+  .page__footer .footer__content .wrapper .footer__contacts .contact__info {
+    padding-left: 41px;
+  }
+  .page__footer .footer__copyrights {
+    padding-top: 45px;
+    padding-bottom: 45px;
   }
 }
