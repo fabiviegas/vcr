@@ -1,6 +1,6 @@
 //out: false
 
-.page__footer { 
+.page__footer {
 
     .footer__content {
         background-image: url('../img/bg-footer-mobile.png');
@@ -8,7 +8,7 @@
         background-size: cover;
         padding-top: 75px;
         padding-bottom: 75px;
-        
+
         .wrapper {
             max-width: 988px;
             margin-left: auto;
@@ -78,7 +78,7 @@
                 .link__contact {
                     display: flex;
                     align-items: center;
-                    gap: 20px;                    
+                    gap: 20px;
 
                     .icon__contact {
                         width: fit-content;
@@ -91,9 +91,9 @@
 
                         &:hover {
                             color: #A98261;
-                            cursor: pointer;  
+                            cursor: pointer;
                         }
-                    }                    
+                    }
                 }
 
                 .contact__info {
@@ -110,12 +110,19 @@
         padding-bottom: 35px;
         background-color: #EEEDED;
 
-        .copyrights {
-            font: 400 16px @fontU;
-            line-height: 145%;
-            color: #020305;
-            text-align: center;
-            padding: 0 30px;
+        .wrapper {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 25px;
+
+            .copyrights {
+                font: 400 16px @fontU;
+                line-height: 145%;
+                color: #020305;
+                text-align: center;
+                padding: 0 30px;
+            }
         }
     }
 
@@ -152,7 +159,7 @@
                     gap: 10px;
                     width: 279px;
                     order: 3;
-                    
+
                     .contact__info {
                         padding-left: 41px;
                     }
@@ -163,6 +170,20 @@
         .footer__copyrights {
             padding-top: 45px;
             padding-bottom: 45px;
+
+            .wrapper {
+                flex-direction: row;
+                justify-content: space-between;
+                max-width: 1262px;
+                padding-left: 24px;
+                padding-right: 24px;
+                margin-left: auto;
+                margin-right: auto;
+
+                .copyrights {
+                    padding: 0;
+                }
+            }
         }
     }
 }

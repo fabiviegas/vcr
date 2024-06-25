@@ -1,0 +1,32 @@
+// out: false
+
+.float__whatsapp {
+    position: fixed;
+    bottom: 5px;
+    right: 10px;
+    width: 74px;
+    height: 74px;
+    background-color: #5BBC48;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    z-index: 2999;
+    transition: all linear .15s;
+    border: 0;
+    border-radius: 5px;
+
+    img {
+        width: 55px;
+        filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(2%) hue-rotate(202deg) brightness(106%) contrast(101%);
+    }
+
+    &:hover {
+        background-color: white;
+        box-shadow: 0 0 26px rgba(0, 0, 0, 0.2);
+
+        img {
+            filter: brightness(0) saturate(100%) invert(66%) sepia(10%) saturate(2974%) hue-rotate(64deg) brightness(99%) contrast(75%);
+        }
+    }
+}
