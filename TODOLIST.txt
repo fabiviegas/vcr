@@ -1,9 +1,0 @@
-- layout - ok
-- botão do whats
-- links
-
-------------
-
-- substituir dados fake
-- SEO
-- subir site na hospedagem
